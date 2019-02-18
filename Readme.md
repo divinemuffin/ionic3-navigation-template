@@ -17,3 +17,9 @@ MAIN FEATURES:
     - api provider ready to be connected to server
     - loading popup with easy use
 - refresher of page content
+
+
+![Alt text](./src/assets/demo/t1.png?raw=true "Auth page")
+![Alt text](src/assets/demo/t2.png?raw=true "Tabs")
+![Alt text](src/assets/demo/t3.png?raw=true "Menu")
+![Alt text](src/assets/demo/t4.png?raw=true "Sidemenu")
