@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{gift.title}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+      <img src="{{gift.image}}" alt="">
+      <ion-card-header>{{ gift.title }}</ion-card-header>
+      <ion-card-content>Points: {{ gift.points }}</ion-card-content>
+      <ion-row justify-content-around>
+        <ion-col col-8>
+          <button ion-button block *ngIf="company_points > gift.points && gift.available; else unavailableBtn">Use Gift Card</button>
+          <ng-template #unavailableBtn>
+            <button ion-button block outline class="unavailable-btn" disabled>Not Enough Points</button>
+          </ng-template>
+        </ion-col>
+      </ion-row>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,17 @@
+$bg-eggwhite: #f3f3f3;
+$col-pasive: #838ea9;
+
+page-rewards {
+    .scroll-content{
+        background-color: $bg-eggwhite;
+    }
+}
+.reward-card.card {
+    width: 100%;
+    margin: 0;
+}
+
+.unavailable-btn{
+    border-color: $col-pasive;
+    color: $col-pasive;
+}

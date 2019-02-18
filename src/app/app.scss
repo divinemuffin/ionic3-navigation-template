@@ -1,0 +1,136 @@
+$bg-lightgray: #f3f3f3;
+
+
+
+// http://ionicframework.com/docs/theming/
+// Sidemenu
+
+.menu__page{
+
+    .page__subpage{
+         border: none;
+         margin-left: 10px;
+         font-size: 90%;
+    }
+}
+
+// ion-input {
+//     margin-top: 20px;
+// }
+
+.scroll-content {
+    background-color: $bg-lightgray;
+}
+
+// .dealcentive-toast .toast-message {
+    
+// }
+
+$bg-main: color($colors, primary);
+$col-white: #fff;
+
+
+// [ TOOLBAR ]
+
+
+.header-ios {
+    padding-top: 20px;
+    background-color: $bg-main;
+}
+
+// .platform-ios.platform-cordova:not(.fullscreen) .search-bar {
+//     margin-top: 20px;
+// }
+
+// [ HEADERS ]
+ion-header {
+    .toolbar-background {
+        background-color: $bg-main;
+    }
+    .toolbar-title {
+        color: $col-white;
+    }
+    .toolbar-title, .toolbar ion-icon {
+        color: $col-white;
+    }
+    .toolbar .back-button-text, .toolbar button {
+        color: $col-white;
+    }
+
+}
+
+// Custom Devcentive icons
+ion-icon {
+    &[class*="dealcentive-"] {
+        // Instead of using the font-based icons
+        // We're applying SVG masks
+        mask-size: 100%;
+        // mask-position: -50% -50%;
+        mask-repeat: no-repeat;
+        background: currentColor;
+        width: 1em;
+        height: 1em;
+    }
+    // custom icons [ Navigation ]
+    &[class*="dealcentive-featured"] {
+        mask-image: url(../assets/icon/NavIcons/Featured.svg);
+    }
+    &[class*="dealcentive-search"] {
+        mask-image: url(../assets/icon/NavIcons/SearchGray.svg);
+    }
+    &[class*="dealcentive-notification"] {
+        mask-image: url(../assets/icon/NavIcons/Notification.svg);
+    }
+    &[class*="dealcentive-saved"] {
+        mask-image: url(../assets/icon/NavIcons/Saved.svg);
+    }
+    &[class*="dealcentive-myStuff"] {
+        // mask-image: url(../assets/icon/NavIcons/myStuff.svg);
+        mask-image: url(../assets/icon/NavIcons/MyStuff.svg);
+    }
+
+    // [ Action ]
+    &[class*="dealcentive-plane"] {
+        mask-image: url(../assets/icon/IconWithAction/Plane.svg);
+    }
+
+
+    // [ General ]
+    &[class*="dealcentive-cart"] {
+        mask-image: url(../assets/icon/GeneralIcons/Cart.svg);
+    }
+
+    &[class*="dealcentive-wifi-off"] {
+        mask-image: url(../assets/icon/Material/baseline-signal_wifi_off-24px.svg);
+    }
+
+    
+
+
+
+    // [Social Logos]
+    &[class*="dealcentive-sms"] {
+        mask-image: url(../assets/icon/Material/baseline-textsms-24px.svg);
+    }
+    &[class*="dc-fb"] {
+        mask-image: url(../assets/icon/SocialIcons/Fb.svg);
+        // background-image: url(./assets/icon/SocialIcons/Fb.svg);
+
+    }
+    &[class*="dealcentive-twitter"] {
+        mask-image: url(../assets/icon/SocialIcons/Twitter.png);
+        // background-image: url(../assets/icon/SocialIcons/Twitter.svg);
+    }
+    &[class*="dc-dollar"] {
+        mask-image: url(../assets/icon/SocialIcons/Dollar.png);
+    }
+    &[class*="dc-linkedin"] {
+        mask-image: url(../assets/icon/SocialIcons/Linkedin.svg);
+    }
+    &[class*="dc-whatsapp"] {
+        mask-image: url(../assets/icon/SocialIcons/Whatsapp.svg);
+    }
+    &[class*="dc-email"] {
+        mask-image: url(../assets/icon/SocialIcons/Gmail.svg);
+    }
+}

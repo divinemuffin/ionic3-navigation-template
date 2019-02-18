@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Main tab</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- Refresher. Delete at will -->
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingText="Pull to refresh"
+      refreshingText="Refreshing..."
+    ></ion-refresher-content>
+  </ion-refresher>
+
+  <h1>Main page</h1>
+  <h3>Try pulling down to refresh</h3>
+
+  <!-- Just error msg block. Delete at will -->
+  <ion-list-header *ngIf="occuredErrorMessage">
+    <p text-center><ion-icon name="warning"></ion-icon></p>
+    <p text-center>Error occured: {{occuredErrorMessage}}</p>
+  </ion-list-header>
+ 
+</ion-content>

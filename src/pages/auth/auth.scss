@@ -1,0 +1,61 @@
+page-auth {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+
+    .shroud {
+        background-color: $col-white;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        z-index: 2;
+        position: absolute;
+
+        ion-icon {
+            font-size: 60px;
+        }
+
+        .content {
+            position: absolute;
+            height: 200px;
+            width: 300px;
+            left: calc(50% - 150px);
+            top: calc(50% - 100px);
+            color: #c5c5c5;
+        }
+        ion-spinner.spinner-ios line {
+            color: #c5c5c5;
+          }
+    }
+
+    .auth-content {
+        .maskedInput {
+            border-radius: 0;
+            border: none;
+            position: relative;
+            font-size: 1.7rem;
+            color: #000;
+            background-color: #fff;
+            padding: 0 5px;
+            width: 100%;
+        }
+    }
+
+    .auth-header {
+        background-color: color($colors, primary);
+        height: 40%;
+        min-height: 40%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        color: #fff;
+        text-align: center;
+    }
+
+    .scroll-content {
+        overflow: hidden;
+    }
+
+    .tabbar {
+        display: none;
+    }
+}
+
